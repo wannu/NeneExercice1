@@ -14,7 +14,7 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
  * add your name as a modifier.
  * @author dancye
  * @modified by Megha Patel
- * 
+ * @modified by Muskan
  */
 public class Card {
 
@@ -49,7 +49,14 @@ public class Card {
     public void setValue(int value) {
         this.value = value;
     }
-   
+   @Override 
+   public String toString(){
+      return value+ "of" +suit;
+   }
+
+   public void printInfo(){
+      System.out.println("My Name is Muskan, I love to listen Music");
+   }
    
     
 }
