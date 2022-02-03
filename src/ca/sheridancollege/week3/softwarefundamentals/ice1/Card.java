@@ -13,8 +13,8 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
  * This code is to be used in ICE1. When you create your own branch,
  * add your name as a modifier.
  * @author dancye
- * @modified by Megha Patel
- * @modified by Muskan
+ * @modified by Nene wann
+ * @modified by Nene Wann
  */
 public class Card {
 
@@ -53,10 +53,22 @@ public class Card {
    public String toString(){
       return value+ "of" +suit;
    }
-
-   public void printInfo(){
-      System.out.println("My Name is Muskan, I love to listen Music");
+    
+   public int pickSuit()
+   {
+       int num= (int)(Math.random()*4)+0;
+       return num;
+   }
+   public int pickValue()
+   {
+       int num;
+       num = (int)(Math.random()*13)+1;
+       return num;
    }
    
+   public void printInfo()
+   {
+    System.out.println("I am done. Hello! My Name is Nene Wann. I love food and music. I am from Guinea.");
+   }
     
 }
